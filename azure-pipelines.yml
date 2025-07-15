@@ -1,21 +1,8 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-# DOES THIS TRIGGER A NEW BUILD TO RUN AUTO-MAGICALLY WHEN I COMMIT TO THE MAIN BRANCH??
-
 trigger:
-  branches:
-    include:
-      - main
-  paths:
-    exclude:
-      - docs/**
-      - scripts/utility/*
-      - README.md
+ - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: ubuntu-lateest
 
 steps:
 - task: Maven@3
